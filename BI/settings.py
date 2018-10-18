@@ -37,7 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Web.apps.WebConfig',
+    'sections.home.apps.Config',
+    'sections.science.apps.Config',
+    'sections.program.apps.Config',
+    'sections.info.apps.Config',
+    'sections.cooperation.apps.Config',
+    'sections.collective.apps.Config',
+    'sections.news.apps.Config',
+
+
+
 ]
 
 MIDDLEWARE = [
@@ -120,3 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]

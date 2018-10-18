@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %} KNU FCSC BI {% endblock title %}</title>
+    <link href="{% static "boot_css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "boot_css/bootstrap-theme.css" %}" rel="stylesheet">
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    <script src="{% static "jquery-3.1.1.js" %}"></script>
+    <script src="{% static "js/bootstrap.js" %}"></script>
+</head>
+</bod>
+<div class="container-fluid">
+    <div class="row">
+        <nav class = "navbar navbar-static-top" role = "navigation">
+        <div class = "navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Business Informatics</a>
+        </div>
+
+        <div class = "collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">ПРОГРАМА БІ</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">ІНФОРМАЦІЯ<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Абітурієнтам</a></li>
+                        <li><a href="#">Студентам</a></li>
+                        <li><a href="#">Аспірантам</a></li>
+                        <li><a href="#">Викладачам</a></li>
+                        <li><a href="#">Роботодавцям</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                        <li><a href="#">Випускникам</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">КОЛЕКТИВ<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Адміністрація факультету</a></li>
+                        <li><a href="#">Викладачі</a></li>
+                        <li><a href="#">Студенти</a></li>
+                        <li><a href="#">Аспіранти</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">НАУКА БІ<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://localhost:63342/Final-BI-Site/science.html?_ijt=mffc4josm68t4enmopjn174ol6">Дослідження</a></li>
+                        <li><a href="#">Наукові заходи</a></li>
+                        <li><a href="#">Новини науки</a></li>
+                        <li><a href="#">Бібліотека</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">СПІВПРАЦЯ<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Вітчизняне партнерство</a></li>
+                        <li><a href="#">Міжнародне партнерство</a></li>
+                        <li><a href="#">Гранти</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="http://localhost:63342/Final-BI-Site/news.html?_ijt=po6prfm6o3f2budl63ufu8hr7g">ДОШКА ОГОЛОШЕНЬ</a></li>
+                <li><a href="#">КОНТАКТИ</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                <li><a href="#"><img class="language" src="img/main/1494544206_United%20Kingdom(Great%20Britain).png"></a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    {% block content%}{% endblock content %}
+
+    <div>
+        <div class="row footer">
+            <div class="col-md-12">
+                <p class="text-center footer-info">CONTACT US +0034 43244 44 support@mail.ru</p>
+                <p class="text-center footer-info">&#169; Факультет комп'ютерних наук та кібернетики | Спеціальність "Бізнес Інформатика"</p>
+                <p class="text-center footer-info">&#169; {% now "Y" %}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

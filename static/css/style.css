@@ -1,0 +1,471 @@
+@font-face {
+    font-family: MyFont;
+    src: url("../fonts/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2");
+}
+
+* {
+    font-family: MyFont, Times, serif;
+}
+
+/*.container-fluid{*/
+/*width: 100%;*/
+/*}*/
+.row {
+    /*    outline: 1px solid red;*/
+}
+
+.container-fluid {
+    outline: 1px solid green;
+}
+
+/*!!!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!!*/
+
+.search {
+    height: 25px;
+    width: 25px;
+}
+
+.navbar {
+    background-image: url("../img/main/nav-pattern.png");
+    width: 100%;
+    position: fixed;
+    height: 55px;
+    /*background-color: red;*/
+}
+
+a {
+    color: white;
+    text-shadow: none;
+}
+
+.language {
+    height: 25px;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow: none;
+!important;
+}
+
+.navbar-nav > li > a {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.navbar-brand {
+    font-size: 19px;
+}
+
+.navbar-nav > li {
+    padding-left: 12px;
+}
+
+.navbar-toggle {
+    border: 1px solid white;
+!important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-brand:hover {
+    color: red;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+    color: greenyellow;
+}
+
+.active {
+    background-color: transparent;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    /*background-color: transparent; !important; ????????????????????????????????*/
+}
+
+/*Добавить медиа-запрос, чтобы не переносило знак поиска.*/
+
+/*!!!!!!!!!!!!!!!! First - SLIDER !!!!!!!!!!!!!!!!*/
+
+.slider {
+    /*margin-top: 30px;*/
+    height: 750px;
+    background-image: url("../img/main/фото3.jpg");
+    /*background-repeat: ;*/
+    background-size: cover;
+}
+
+.slider h1 {
+    margin-top: 150px;
+    color: white;
+}
+
+.col-md-1 > span {
+    margin-top: 120px;
+    font-size: 40px;
+    color: white;
+}
+
+.glyphicon-chevron-right {
+    padding-left: 25px;
+}
+
+.slider img {
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0.5;
+}
+
+.slider img:hover {
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+}
+
+/*!!!!!!!!!!!!!!!! First - BI-INFO !!!!!!!!!!!!!!!!*/
+
+.bi-info {
+    padding: 100px 0 60px 0;
+    /*height: 500px;*/
+    border: 1px solid red;
+}
+
+.more {
+    margin-top: 20px;
+    background-color: green;
+    width: 120px;
+    height: 30px;
+    padding-top: 3px;
+    font-size: 16px;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.bi-logo-img {
+    height: 235px;
+}
+
+/*!!!!!!!!!!!!!!!! First - ZASLAVSKIY !!!!!!!!!!!!!!!!*/
+
+.zaslavskiy {
+    padding: 100px 0 60px 0;
+
+    /*height: 600px;*/
+    background-image: url("../img/main/background.jpg");
+}
+
+.zaslavskiy .col-md-3 {
+    /*outline: 1px solid black;*/
+    font-size: 18px;
+}
+
+.zaslavskiy p, h1 {
+    color: white;
+}
+
+.zaslavskiy-img {
+    height: 250px;
+    width: 180px;
+    -webkit-box-shadow: 0px 1px 15px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 15px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 15px 2px rgba(0, 0, 0, 0.75);
+}
+
+.moree {
+    margin-top: 40px;
+}
+
+/*!!!!!!!!!!!!!!!! First - MEMBERS - INFO !!!!!!!!!!!!!!!!*/
+
+.members-info {
+    padding: 100px 0 100px 0;
+}
+
+.members-info img {
+    height: 375px;
+}
+
+.members-info p {
+    font-size: 18px;
+}
+
+/*.members-info .col-md-6{*/
+/*outline: 1px solid red;*/
+/*}*/
+
+/*!!!!!!!!!!!!!!!! First - PROJECTS - EVENTS !!!!!!!!!!!!!!!!*/
+
+.projects-events {
+    padding: 100px 0 60px 0;
+    background-image: url("../img/main/background.jpg");
+}
+
+.projects-events img {
+    height: 250px;
+}
+
+.projects-events p {
+    color: white;
+}
+
+.projects-events .project-name {
+    font-size: 18px;
+    color: green;
+}
+
+.projects, .grants {
+    font-size: 32px;
+}
+
+/*!!!!!!!!!!!!!!!! First - GRANTS !!!!!!!!!!!!!!!!*/
+
+.grants-info {
+    padding: 100px 0 60px 0;
+}
+
+.erasmus {
+    height: 100px;
+}
+
+.align {
+    height: 120px;
+}
+
+.quare {
+    height: 200px;
+}
+
+/*!!!!!!!!!!!!!!!! First - FOOTER !!!!!!!!!!!!!!!!*/
+
+.footer {
+    padding: 20px 0 20px 0;
+    background-image: url("../img/main/background.jpg");
+    color: white;
+}
+
+.footer-info {
+    font-size: 16px;
+}
+
+/*!!!!!!!!!!!!!!!! SCIENCE PAGE !!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!! SUB-HEADER !!!!!!!!!!!!!!!!*/
+
+.sub-header {
+    background-color: green;
+    padding-top: 55px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    /*padding-left: 50px;*/
+}
+
+.sub-header .col-md-12 {
+    color: white;
+}
+
+.nav-pills > li.active > a {
+    color: #000;
+}
+
+.nav-pills a {
+    color: #0f0f0f;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!! SIDEBAR !!!!!!!!!!!!!!!!*/
+
+.side-bar {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 121px;
+    padding: 0;
+    width: 16.66%;
+    background-image: url("../img/main/nav-pattern.png");
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    outline: 1px solid red;
+}
+
+.uber {
+    padding-left: 0;
+    outline: 1px solid red;
+}
+
+.side-bar li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.side-bar li a.active {
+    /*background-color: #4CAF50;*/
+    background-color: red;
+    color: white;
+}
+
+.side-bar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/*.druber {*/
+    /*height: 1200px;*/
+/*}*/
+
+.subcategoty{
+    display: none;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.library:hover .subcategoty{
+    display: block;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!! SCIENCE-INFO !!!!!!!!!!!!!!!!*/
+
+.science-info{
+    outline: 1px solid deeppink;
+    padding-top: 120px;
+    /*height: 120px;*/
+    background-image: url("../img/science/pattern2.jpg");
+    padding-bottom: 80px;
+}
+
+.science-info img {
+    width: 90%;
+}
+
+.science-info .col-md-6 {
+    padding: 10px;
+    outline: 1px solid black;
+}
+
+.science-info .more {
+    color: black;
+    margin-top: 124px;
+    width: 200px;
+    height: 40px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!! NEWS PAGE !!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!! HOT-NEWS !!!!!!!!!!!!!!!!*/
+
+.newss{
+    background-image: url("../img/news/pattern2.jpg");
+}
+
+.hot-news{
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+}
+
+.hotest-news  {
+    width: 95%;
+}
+
+.news{
+    padding-bottom: 80px;
+}
+
+.news  .col-md-2 img, .hotest-news{
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75);
+}
+
+.news .col-md-1 img:hover{
+    -webkit-animation: cssAnimation 1.067s 20 ease;
+    -moz-animation:  cssAnimation 1.067s 20 ease;
+    -o-animation: cssAnimation 1.067s 20 ease;
+}
+
+@-webkit-keyframes cssAnimation {
+    from {-webkit-transform: rotate(0deg) scale(1.000) skew(0deg) translate(0px) ;
+        -moz-transform: rotate(0deg) scale(1.000) skew(0deg) translate(0px) ;
+        -o-transform: rotate(0deg) scale(1.000) skew(0deg) translate(0px) ;
+    }
+    to {-webkit-transform: rotate(0deg) scale(1.272) skew(0deg) translate(0px) ;
+        -moz-transform: rotate(0deg) scale(1.272) skew(0deg) translate(0px) ;
+        -o-transform: rotate(0deg) scale(1.272) skew(0deg) translate(0px) ;
+    }
+}
+@-moz-keyframes cssAnimation {
+    from {-webkit-transform: rotate(0deg) scale(1.000) skew(0deg) translate(0px) ;
+        -moz-transform: rotate(0deg) scale(1.000) skew(0deg) translate(0px) ;
+        -o-transform: rotate(0deg) scale(1.000) skew(0deg) translate(0px) ;
+    }
+    to {-webkit-transform: rotate(0deg) scale(1.272) skew(0deg) translate(0px) ;
+        -moz-transform: rotate(0deg) scale(1.272) skew(0deg) translate(0px) ;
+        -o-transform: rotate(0deg) scale(1.272) skew(0deg) translate(0px) ;
+    }
+}
+@-o-keyframes cssAnimation {
+    from {-webkit-transform: rotate(0deg) scale(1.000) skew(0deg) translate(0px) ;
+        -moz-transform: rotate(0deg) scale(1.000) skew(0deg) translate(0px) ;
+        -o-transform: rotate(0deg) scale(1.000) skew(0deg) translate(0px) ;
+    }
+    to {-webkit-transform: rotate(0deg) scale(1.272) skew(0deg) translate(0px) ;
+        -moz-transform: rotate(0deg) scale(1.272) skew(0deg) translate(0px) ;
+        -o-transform: rotate(0deg) scale(1.272) skew(0deg) translate(0px) ;
+    }
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+/*_________________MEDIA______________*/
+
+@media (max-width: 1210px) {
+    .navbar-nav li a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1118px) {
+    .navbar-nav li  {
+        padding-left: 6px;
+    }
+}
+
+@media (max-width: 1064px) {
+    .navbar-nav li  {
+        padding-left: 6px;
+    }
+
+    .navbar-header a{
+        font-size: 12px;
+    }
+}

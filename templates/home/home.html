@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}BI{% endblock title %}
+{% block content%}
+    <div class="row slider">
+        <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <h1 class="text-center"><strong>Інформаційний ресурс програми <br>Бізнес Інформатика</strong></h1>
+        </div>
+        </div>
+            <div class="col-md-1"><span class="glyphicon glyphicon-chevron-left"></span></div>
+            <!--<div class="col-md-4 col-md-offset-1"><img src="img/Эмб%20Куб.png"></div>-->
+            <!--<div class="col-md-offset-1 col-md-4"><img src="img/Эмб%20Унив.png"></div>-->
+        <div class="col-md-4 col-md-offset-1"><a href="http://cyb.univ.kiev.ua"><img src="img/main/Куб100.png"></a></div>
+        <div class="col-md-offset-1 col-md-4"><a href="http://www.univ.kiev.ua"><img src="img/main/Эмб100.png"></a></div>
+            <div class="col-md-1"><span class="glyphicon glyphicon-chevron-right"></span></div>
+    </div>
+
+    <div class="row bi-info">
+        <div class="col-md-4 qq">
+            <div>
+                <h3 class="text-right">Пункт 1 <span class="glyphicon glyphicon-exclamation-sign"></span></h3>
+                <h4 class="text-right">Інформація про пункт 1</h4>
+            </div>
+            <div>
+                <h3 class="text-right">Пункт 2 <span class="glyphicon glyphicon-exclamation-sign"></span></h3>
+                <h4 class="text-right">Інформація про пункт 2</h4>
+            </div>
+            <div>
+                <h3 class="text-right">Пункт 3 <span class="glyphicon glyphicon-exclamation-sign"></span></h3>
+                <h4 class="text-right">Інформація про пункт 3</h4>
+            </div>
+        </div>
+        <div class="col-md-4 qw">
+            <img class="bi-logo-img center-block" src="img/main/BI_logo.jpg">
+            <div class="more center-block"><a href="#"><p class="text-center"><strong>Детальніше</strong></p></a></div>
+        </div>
+        <div class="col-md-4 qe">
+            <div>
+                <h3 class="text-left"> <span class="glyphicon glyphicon-exclamation-sign"></span> Пункт 4</h3>
+                <h4 class="text-left">Інформація про пункт 1</h4>
+            </div>
+            <div>
+                <h3 class="text-left"><span class="glyphicon glyphicon-exclamation-sign"></span> Пункт 5</h3>
+                <h4 class="text-left">Інформація про пункт 2</h4>
+            </div>
+            <div>
+                <h3 class="text-left"><span class="glyphicon glyphicon-exclamation-sign"></span> Пункт 6</h3>
+                <h4 class="text-left">Інформація про пункт 3</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row zaslavskiy">
+        <!--<h1 class="text-center">Пссс....Грант нннадо? Христос Воскрес !</h1>-->
+        <div class="col-md-3">
+            <img class="zaslavskiy-img center-block" src="{% static "img/main/zaslavsky.jpg" %}">
+            <p class="text-center">Завідувач кафедри<br>"Бізнес Інформатика"</p>
+        </div>
+        <div class="col-md-3">
+            <img class="zaslavskiy-img center-block" src="{% static "img/main/zaslavsky.jpg" %}">
+            <p class="text-center">Завідувач кафедри<br>"Бізнес Інформатика"</p>
+        </div>
+        <div class="col-md-3">
+            <img class="zaslavskiy-img center-block" src="{% static "img/main/zaslavsky.jpg" %}">
+            <p class="text-center">Завідувач кафедри<br>"Бізнес Інформатика"</p>
+        </div>
+        <div class="col-md-3">
+            <img class="zaslavskiy-img center-block" src="{% static "img/main/zaslavsky.jpg" %}">
+            <p class="text-center">Завідувач кафедри<br>"Бізнес Інформатика"</p>
+        </div>
+        <div class="col-md-2 col-md-offset-5">
+            <div class="more moree center-block"><a href="#"><p class="text-center"><strong>Детальніше</strong></p></a></div>
+        </div>
+
+        <!--<div class="more center-block"><a href="#"><p class="text-center"><strong>Детальніше</strong></p></a></div>-->
+    </div>
+    <div class="row members-info">
+        <div class="col-md-6">
+            <img class="center-block" src="{% static "img/main/students.jpg" %}">
+            <p class="text-center"><strong>Студенти 1 - го року навчання<br>ОР "Бізнес Інформатика"</strong></p>
+        </div>
+        <div class="col-md-6">
+            <img class="center-block" src="{% static "img/main/students.jpg" %}">
+            <p class="text-center"><strong>Студенти 2 - го року навчання<br>ОР "Бізнес Інформатика"</strong></p>
+        </div>
+    </div>
+    <div class="row projects-events">
+        <div class="col-md-12">
+            <p class="text-center projects">Проекти та дослідження</p>
+        </div>
+        <div class="col-md-4">
+            <img class="center-block" src="{% static "img/main/projects.jpg"%}">
+            <p class="project-name text-center">Назва 1</p>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur semper risus hendrerit venenatis. Etiam nec facilisis elit, ut bibendum velit. Morbi scelerisque gravida quam non interdum. Donec eu odio risus. Aenean condimentum sem vitae tristique facilisis. Fusce cursus tellus non mi pretium consequat. Maecenas id felis quis elit tincidunt egestas.Sed rhoncus nisi sit amet viverra fermentum. Sed bibendum, nulla eu mollis posuere, tellus leo dapibus leo, quis tristique ligula tortor ac erat. Ut ornare volutpat maximus. Etiam fringilla elit quis semper condimentum.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img class="center-block" src="{% static "img/main/projects.jpg"%}">
+            <p class="project-name text-center">Назва 2</p>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur semper risus hendrerit venenatis. Etiam nec facilisis elit, ut bibendum velit. Morbi scelerisque gravida quam non interdum. Donec eu odio risus. Aenean condimentum sem vitae tristique facilisis. Fusce cursus tellus non mi pretium consequat. Maecenas id felis quis elit tincidunt egestas.Sed rhoncus nisi sit amet viverra fermentum. Sed bibendum, nulla eu mollis posuere, tellus leo dapibus leo, quis tristique ligula tortor ac erat. Ut ornare volutpat maximus. Etiam fringilla elit quis semper condimentum.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img class="center-block" src="{% static "img/main/projects.jpg"%}">
+            <p class="project-name text-center">Назва 3</p>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur semper risus hendrerit venenatis. Etiam nec facilisis elit, ut bibendum velit. Morbi scelerisque gravida quam non interdum. Donec eu odio risus. Aenean condimentum sem vitae tristique facilisis. Fusce cursus tellus non mi pretium consequat. Maecenas id felis quis elit tincidunt egestas.Sed rhoncus nisi sit amet viverra fermentum. Sed bibendum, nulla eu mollis posuere, tellus leo dapibus leo, quis tristique ligula tortor ac erat. Ut ornare volutpat maximus. Etiam fringilla elit quis semper condimentum.
+            </p>
+        </div>
+        <div class="col-md-2 col-md-offset-5">
+            <div class="more moree center-block"><a href="#"><p class="text-center"><strong>Детальніше</strong></p></a></div>
+        </div>
+    </div>
+    <div class="row grants-info">
+        <div class="col-md-12">
+            <p class="grants text-center">Гранти</p>
+        </div>
+        <div class="col-md-12">
+            <img class="center-block erasmus" src="{% static "img/main/erasmuslogo.jpg" %}">
+        </div>
+        <div class="col-md-6">
+            <img class="center-block align" src="{% static "img/main/align.jpg" %}">
+        </div>
+        <div class="col-md-6">
+            <img class="center-block quare" src="{% static "img/main/quaere.jpg" %}">
+        </div>
+        <div class="col-md-2 col-md-offset-5">
+            <div class="more center-block"><a href="#"><p class="text-center"><strong>Детальніше</strong></p></a></div>
+        </div>
+    </div>
+{% endblock content %}
