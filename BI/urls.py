@@ -14,23 +14,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
+from django.conf.urls import url
 
-from sections.collective import views as collective
+from sections.collective import urls as collective
+from sections.news import urls as news
+from sections.program import urls as program
+from sections.info import urls as info
+from sections.cooperation import urls as cooperation
 from sections.home import views as home
-from sections.news import views as news
-from sections.cooperation import views as cooperation
-from sections.program import views as program
-from sections.science import views as science
-from sections.info import views as info
+from sections.science import urls as science
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('collective/', collective.index),
-    path('news/', news.index),
-    path('cooperation/', cooperation.index),
-    path('program/', program.index),
-    path('science/', science.index),
-    path('info/', info.index),
-    path('',  home.index),
+    path('', home.index),
+    path('collective/', include(collective)),
+    path('news/', include(news)),
+    path('cooperation/', include(cooperation)),
+    path('program/', include(program)),
+    path('science/', include(science)),
+    path('info/', include(info)),
 ]
